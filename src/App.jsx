@@ -41,6 +41,7 @@ export default function App() {
             exit={() => setStage(2)}
           />
         }
+        {stage === 5 && <Memories next={() => setStage(7)} back={() => setStage(3)} />}
         {stage === 4 && <LoveLetter exit={() => setStage(3)} next={() => setStage(5)} />}
         {stage === 6 && <Promises next={() => setStage(7)} back={() => setStage(3)} />}
         {stage === 7 && <Destiny back={() => setStage(3)} />}

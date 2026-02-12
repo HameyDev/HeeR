@@ -5,42 +5,27 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 export default function Memories({ next, back }) {
   const sections = [
-    { id: "first", label: "First" },
-    { id: "cute", label: "Cute" },
-    { id: "funny", label: "Funny" },
-    { id: "fav", label: "Fav" },
+    { id: "dreams", label: "Dreams" },
   ];
   const containerRef = useRef(null);
 
   const data = {
-    first: [
-      { src: "/memories/first/1.jpg", caption: "Our beginning 🌸" },
-      { src: "/memories/first/2.jpg", caption: "First smile" },
-      { src: "/memories/first/1.jpg", caption: "Memorable day" },
-      { src: "/memories/first/2.jpg", caption: "Together always" },
-      { src: "/memories/first/1.jpg", caption: "Our journey" },
-    ],
-    cute: [
-      { src: "/memories/cute/1.jpg", caption: "Cute moment 🤍" },
-      { src: "/memories/cute/2.jpg", caption: "My favorite" },
-      { src: "/memories/cute/1.jpg", caption: "Laughing together" },
-      { src: "/memories/cute/2.jpg", caption: "Sweet smile" },
-    ],
-    funny: [
-      { src: "/memories/funny/1.jpg", caption: "We laughed 😂" },
-      { src: "/memories/funny/2.jpg", caption: "Silly faces" },
-      { src: "/memories/funny/3.jpg", caption: "Crazy moments" },
-      { src: "/memories/funny/4.jpg", caption: "Inside joke" },
-    ],
-    fav: [
-      { src: "/memories/fav/1.jpg", caption: "My heart ❤️" },
-      { src: "/memories/fav/2.jpg", caption: "Forever us" },
-      { src: "/memories/fav/3.jpg", caption: "Soulmate" },
-      { src: "/memories/fav/4.jpg", caption: "Eternal love" },
+    dream: [
+      { src: "/memories/dream/10.png", caption: "Proposing You" },
+      { src: "/memories/dream/1.png", caption: "Putting you in my hands" },
+      { src: "/memories/dream/2.png", caption: "Giving Love Letter" },
+      { src: "/memories/dream/3.png", caption: "Holding Hand" },
+      { src: "/memories/dream/4.png", caption: "Kissing Hand" },
+      { src: "/memories/dream/5.png", caption: "Caring" },
+      { src: "/memories/dream/6.png", caption: "Dancing Together" },
+      { src: "/memories/dream/7.png", caption: "Hugging You" },
+      { src: "/memories/dream/8.png", caption: "We laughed 😂" },
+      { src: "/memories/dream/9.png", caption: "Giving Flowers" },
+      
     ],
   };
 
-  const [activeSection, setActiveSection] = useState("first");
+  const [activeSection, setActiveSection] = useState("dream");
   const [startIndex, setStartIndex] = useState(0);
   const [selectedImg, setSelectedImg] = useState(null);
 
@@ -123,28 +108,10 @@ export default function Memories({ next, back }) {
 
         {/* Title */}
         <h1 className="text-3xl sm:text-4xl font-light text-softpink drop-shadow-[0_0_15px_rgba(255,182,193,0.7)] text-center mb-6">
-          Our Memories
+          Our Future
         </h1>
 
-        {/* Sections */}
-        <div className="flex justify-center gap-3 flex-wrap mb-6">
-          {sections.map((sec) => (
-            <motion.button
-              key={sec.id}
-              onClick={() => { setActiveSection(sec.id); setStartIndex(0); }}
-              whileTap={{ scale: 0.95 }}
-              whileHover={{ scale: 1.05 }}
-              className={`px-4 py-2 sm:px-8 sm:py-3 rounded-full font-medium capitalize text-[10px] sm:text-base transition-all duration-300
-                border border-white/20 backdrop-blur-md
-                ${activeSection === sec.id
-                  ? "bg-gradient-to-r from-rose-500 to-pink-400 text-white shadow-[0_0_20px_rgba(255,105,135,0.6)] hover:shadow-[0_0_30px_rgba(255,105,135,0.8)]"
-                  : "bg-white/10 text-white/80 hover:bg-white/20 hover:text-white shadow-sm"
-                }`}
-            >
-              {sec.label}
-            </motion.button>
-          ))}
-        </div>
+        
 
         {/* Gallery */}
         <div className="relative flex items-center justify-center w-full gap-4 mt-4">
@@ -176,7 +143,7 @@ export default function Memories({ next, back }) {
                 className="flex gap-4"
                 initial={{ opacity: 0 }}
                 animate={{
-                  x: `-${startIndex * (106 / visibleCount)}%`,
+                  x: `-${startIndex * (106.5 / visibleCount)}%`,
                   opacity: 1,
                 }}
                 exit={{ opacity: 0 }}
@@ -197,7 +164,7 @@ export default function Memories({ next, back }) {
                       src={img.src}
                       alt={img.caption}
                       className="
-              w-full h-64 object-cover rounded-xl
+              w-full h-70 object-cover rounded-xl
               transition-all duration-400
               group-hover:scale-[1.05]
               shadow-[0_0_18px_rgba(255,105,135,0.35)]

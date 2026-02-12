@@ -10,6 +10,7 @@ export default function HeartDashboard({ openSection, exit }) {
         { name: "My Words For You", id: "loveLetter" },
         { name: "Promises I Made To You", id: "promises" },
         { name: "Our Written Destiny", id: "destiny" },
+        { name: "Our Beautiful Future", id: "memories" },
     ];
     const [isMobile, setIsMobile] = useState(false);
 
