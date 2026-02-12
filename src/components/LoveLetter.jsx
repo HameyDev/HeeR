@@ -126,7 +126,7 @@ my forever.
             backgroundSize: isMobile ? "230px 250px" : "490px 350px",
             backgroundPosition: "bottom right",
             borderRadius: "8px",
-            filter: "brightness(0.80) drop-shadow(0 30px 10px rgba(244, 114, 182, 0.4))",
+            filter: "brightness(0.80) drop-shadow(0 30px 10px rgba(244, 114, 182, 0.2))",
           }}
         />
 

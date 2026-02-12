@@ -45,49 +45,7 @@ export default function Promises({ next, back }) {
         style={{ backgroundImage: "url('/laiba-bg.jpg')" }}
       />
 
-      <div
-        className="absolute sm:ml-16 sm:mb-16 mb-[132px] ml-10 inset-0 z-50 bg-no-repeat"
-        style={{
-          backgroundImage: "url('/pic-4.png')",
-          backgroundSize: isMobile ? "170px 280px" : "290px 450px",
-          backgroundPosition: "bottom left",
-          // rose-400 glow from bottom
-          filter: "brightness(0.82) drop-shadow(0 15px 15px rgba(244, 114, 182, 0.1))", // subtle glow
-          borderRadius: "8px",
-        }}
-      />
-      <div
-        className="absolute  inset-0 z-19 bg-no-repeat"
-        style={{
-          backgroundImage: "url('/floor.png')",
-          backgroundSize: isMobile ? "250px 380px" : "520px 260px",
-          backgroundPosition: "bottom left",
-          borderRadius: "8px",
-          filter: "brightness(0.95) drop-shadow(0 30px 10px rgba(244, 114, 182, 0.6))",
-        }}
-      />
 
-      <div
-        className="absolute sm:mr-12 sm:mb-10 mb-[130px] mr-6 inset-0 z-50 bg-no-repeat"
-        style={{
-          backgroundImage: "url('/pic-5.png')",
-          backgroundSize: isMobile ? "180px 280px" : "330px 500px",
-          backgroundPosition: "bottom right",
-
-          filter: "brightness(0.82) drop-shadow(0 20px 15px rgba(244, 114, 182, 0.1))", // subtle glow
-          borderRadius: "8px",
-        }}
-      />
-      <div
-        className="absolute mb-10  inset-0 z-19 bg-no-repeat"
-        style={{
-          backgroundImage: "url('/floor.png')",
-          backgroundSize: isMobile ? "250px 300px"  : "410px 140px",
-          backgroundPosition: "bottom right",
-          borderRadius: "8px",
-          filter: "brightness(0.95) drop-shadow(0 30px 10px rgba(244, 114, 182, 0.6))",
-        }}
-      />
       <div className="absolute inset-0 bg-black/65 backdrop-blur-[2px]" />
 
       {/* ✨ Falling Particles */}
@@ -131,9 +89,52 @@ export default function Promises({ next, back }) {
         >
           My Promises To You
         </motion.h1>
+        <div
+          className="absolute sm:ml-12 sm:mb-[90px] mb-[70px] ml-6 inset-0 z-50 bg-no-repeat"
+          style={{
+            backgroundImage: "url('/pic-4.png')",
+            backgroundSize: isMobile ? "170px 280px" : "240px 380px",
+            backgroundPosition: "bottom left",
+            // rose-400 glow from bottom
+            filter: "brightness(0.82) drop-shadow(0 15px 15px rgba(244, 114, 182, 0.1))", // subtle glow
+            borderRadius: "8px",
+          }}
+        />
+        <div
+          className="absolute z-60  inset-0 z-19 bg-no-repeat"
+          style={{
+            backgroundImage: "url('/floor.png')",
+            backgroundSize: isMobile ? "240px 270px" : "400px 340px",
+            backgroundPosition: "bottom left",
+            borderRadius: "8px",
+            filter: "brightness(0.95) drop-shadow(0 30px 10px rgba(244, 114, 182, 0.2))",
+          }}
+        />
+
+        <div
+          className="absolute sm:mr-12 sm:mb-[90px] mb-[68px] mr-2 inset-0 z-50 bg-no-repeat"
+          style={{
+            backgroundImage: "url('/pic-5.png')",
+            backgroundSize: isMobile ? "170px 277px" : "270px 375px",
+            backgroundPosition: "bottom right",
+
+            filter: "brightness(0.82) drop-shadow(0 20px 15px rgba(244, 114, 182, 0.1))", // subtle glow
+            borderRadius: "8px",
+          }}
+        />
+        <div
+          className="absolute mb-10 z-60  inset-0 z-19 bg-no-repeat"
+          style={{
+            backgroundImage: "url('/floor.png')",
+            backgroundSize: isMobile ? "200px 190px" : "400px 240px",
+            backgroundPosition: "bottom right",
+            borderRadius: "8px",
+            filter: "brightness(0.95) drop-shadow(0 30px 10px rgba(244, 114, 182, 0.2))",
+          }}
+        />
 
         {/* Promises List */}
-        <div className="flex-1 overflow-y-auto pt-20 sm:pt-0 flex flex-col items-center sm:justify-center text-center p-4 sm:p-6 rounded-2xl bg-white/5 backdrop-blur-sm  shadow-[0_0_50px_rgba(255,105,135,0.25)] text-left text-rose-100">
+        <div className="flex-1 overflow-y-auto pt-20 sm:pt-8 flex flex-col items-center  text-center p-4 sm:p-6 rounded-2xl bg-white/5 backdrop-blur-sm  shadow-[0_0_50px_rgba(255,105,135,0.25)] text-left text-rose-100">
           {promises.map((text, i) => (
             <motion.p
               key={i}
