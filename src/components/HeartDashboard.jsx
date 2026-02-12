@@ -8,7 +8,6 @@ import { useMemo, useEffect, useState } from "react";
 export default function HeartDashboard({ openSection, exit }) {
     const sections = [
         { name: "My Words For You", id: "loveLetter" },
-        { name: "Our Beautiful Memories", id: "memories" },
         { name: "Promises I Made To You", id: "promises" },
         { name: "Our Written Destiny", id: "destiny" },
     ];
@@ -47,10 +46,10 @@ export default function HeartDashboard({ openSection, exit }) {
                 style={{ backgroundImage: "url('/laiba-bg.jpg')" }}
             />
             <div
-                className="absolute sm:ml-12 mb-16 inset-0 z-20 bg-no-repeat"
+                className="absolute sm:ml-16 mb-10 sm:mb-6 inset-0 z-20 bg-no-repeat"
                 style={{
                     backgroundImage: "url('/pic.png')",
-                    backgroundSize: isMobile ? "180px 270px" : "320px 500px", // 📱 vs 💻
+                    backgroundSize: isMobile ? "190px 290px" : "320px 500px", // 📱 vs 💻
                     backgroundPosition: "bottom left",
                     filter:
                         "brightness(0.82) drop-shadow(0 15px 15px rgba(244, 114, 182, 0.1))",
@@ -61,7 +60,7 @@ export default function HeartDashboard({ openSection, exit }) {
                 className="absolute  ml-8 inset-0 z-19 bg-no-repeat"
                 style={{
                     backgroundImage: "url('/floor.png')",
-                    backgroundSize: "450px 220px",
+                    backgroundSize: "400px 250px",
                     backgroundPosition: "bottom left",
                     borderRadius: "8px",
                     filter: "brightness(0.95) drop-shadow(0 30px 10px rgba(244, 114, 182, 0.6))",
@@ -79,10 +78,10 @@ export default function HeartDashboard({ openSection, exit }) {
 
 
             <div
-                className="absolute sm:mr-12 mb-4 sm:mb-0 inset-0 z-20 bg-no-repeat"
+                className="absolute sm:mr-14 mb-8 sm:mb-0 inset-0 z-20 bg-no-repeat"
                 style={{
                     backgroundImage: "url('/pic-2.png')",
-                    backgroundSize: isMobile ? "197px 350px" : "400px 600px",
+                    backgroundSize: isMobile ? "190px 290px" : "360px 500px",
                     backgroundPosition: "bottom right",
 
                     filter: "brightness(0.82) drop-shadow(0 20px 15px rgba(244, 114, 182, 0.1))", // subtle glow
@@ -93,7 +92,7 @@ export default function HeartDashboard({ openSection, exit }) {
                 className="absolute  ml-8 inset-0 z-19 bg-no-repeat"
                 style={{
                     backgroundImage: "url('/floor.png')",
-                    backgroundSize: "600px 280px",
+                    backgroundSize: "500px 270px",
                     backgroundPosition: "bottom right",
                     borderRadius: "8px",
                     filter: "brightness(0.95) drop-shadow(0 30px 10px rgba(244, 114, 182, 0.6))",

@@ -109,10 +109,10 @@ my forever.
         </div>
 
         <div
-          className="absolute sm:mr-24 mr-4 sm:mb-28 mb-16 inset-0 z-20 bg-no-repeat"
+          className="absolute sm:mr-24 mr-2 sm:mb-28 mb-20 inset-0 z-20 bg-no-repeat"
           style={{
             backgroundImage: "url('/pic-3.png')",
-            backgroundSize: isMobile ? "180px 300px" : "300px 470px",
+            backgroundSize: isMobile ? "180px 250px" : "300px 470px",
             backgroundPosition: "bottom right",
 
             filter: "brightness(0.82) drop-shadow(0 20px 15px rgba(244, 114, 182, 0.1))", // subtle glow
@@ -123,10 +123,10 @@ my forever.
           className="absolute  ml-20 inset-0 z-19 bg-no-repeat"
           style={{
             backgroundImage: "url('/floor.png')",
-            backgroundSize: isMobile ? "230px 250px" : "490px 350px",
+            backgroundSize: isMobile ? "230px 270px" : "490px 350px",
             backgroundPosition: "bottom right",
             borderRadius: "8px",
-            filter: "brightness(0.80) drop-shadow(0 30px 10px rgba(244, 114, 182, 0.2))",
+            filter: "brightness(0.80) drop-shadow(0 30px 10px rgba(244, 114, 182, 0.13))",
           }}
         />
 

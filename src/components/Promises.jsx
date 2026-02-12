@@ -90,10 +90,10 @@ export default function Promises({ next, back }) {
           My Promises To You
         </motion.h1>
         <div
-          className="absolute sm:ml-12 sm:mb-[90px] mb-[70px] ml-6 inset-0 z-50 bg-no-repeat"
+          className="absolute sm:ml-12 sm:mb-[100px] mb-[80px] ml-6 inset-0 z-50 bg-no-repeat"
           style={{
             backgroundImage: "url('/pic-4.png')",
-            backgroundSize: isMobile ? "170px 280px" : "240px 380px",
+            backgroundSize: isMobile ? "170px 250px" : "240px 380px",
             backgroundPosition: "bottom left",
             // rose-400 glow from bottom
             filter: "brightness(0.82) drop-shadow(0 15px 15px rgba(244, 114, 182, 0.1))", // subtle glow
@@ -104,18 +104,18 @@ export default function Promises({ next, back }) {
           className="absolute z-60  inset-0 z-19 bg-no-repeat"
           style={{
             backgroundImage: "url('/floor.png')",
-            backgroundSize: isMobile ? "240px 270px" : "400px 340px",
+            backgroundSize: isMobile ? "240px 270px" : "340px 340px",
             backgroundPosition: "bottom left",
             borderRadius: "8px",
-            filter: "brightness(0.95) drop-shadow(0 30px 10px rgba(244, 114, 182, 0.2))",
+            filter: "brightness(0.85) drop-shadow(0 30px 10px rgba(244, 114, 182, 0.15))",
           }}
         />
 
         <div
-          className="absolute sm:mr-12 sm:mb-[90px] mb-[68px] mr-2 inset-0 z-50 bg-no-repeat"
+          className="absolute sm:mr-6 sm:mb-[110px] mb-[87px] mr-2 inset-0 z-50 bg-no-repeat"
           style={{
             backgroundImage: "url('/pic-5.png')",
-            backgroundSize: isMobile ? "170px 277px" : "270px 375px",
+            backgroundSize: isMobile ? "170px 228px" : "250px 340px",
             backgroundPosition: "bottom right",
 
             filter: "brightness(0.82) drop-shadow(0 20px 15px rgba(244, 114, 182, 0.1))", // subtle glow
@@ -126,10 +126,10 @@ export default function Promises({ next, back }) {
           className="absolute mb-10 z-60  inset-0 z-19 bg-no-repeat"
           style={{
             backgroundImage: "url('/floor.png')",
-            backgroundSize: isMobile ? "200px 190px" : "400px 240px",
+            backgroundSize: isMobile ? "200px 190px" : "350px 240px",
             backgroundPosition: "bottom right",
             borderRadius: "8px",
-            filter: "brightness(0.95) drop-shadow(0 30px 10px rgba(244, 114, 182, 0.2))",
+            filter: "brightness(0.95) drop-shadow(0 30px 10px rgba(244, 114, 182, 0.1))",
           }}
         />
 

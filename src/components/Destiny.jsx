@@ -10,7 +10,6 @@ export default function Destiny({ next, back }) {
     "I see a future where your hand is in mine 🤍",
     "Where every sunrise begins with your smile ☀️",
     "Where every night ends with peace in your presence 🌙",
-    "",
     "Not just today…",
     "Not just tomorrow…",
     "But forever ❤️",
@@ -106,10 +105,10 @@ export default function Destiny({ next, back }) {
         </motion.h1>
 
         <div
-          className="absolute sm:ml-0 sm:mb-28 mb-[80px] ml-2 inset-0 z-50 bg-no-repeat"
+          className="absolute sm:ml-12 sm:mb-28 mb-[90px] ml-6 inset-0 z-50 bg-no-repeat"
           style={{
             backgroundImage: "url('/pic-6.png')",
-            backgroundSize: isMobile ? "120px 210px" : "250px 370px",
+            backgroundSize: isMobile ? "115px 170px" : "230px 320px",
             backgroundPosition: "bottom left",
             // rose-400 glow from bottom
             filter: "brightness(0.82) drop-shadow(0 15px 15px rgba(244, 114, 182, 0.1))", // subtle glow
@@ -120,18 +119,18 @@ export default function Destiny({ next, back }) {
           className="absolute sm:z-60 inset-0 z-19 bg-no-repeat"
           style={{
             backgroundImage: "url('/floor.png')",
-            backgroundSize: isMobile ? "180px 270px" : "280px 350px",
+            backgroundSize: isMobile ? "180px 270px" : "290px 350px",
             backgroundPosition: "bottom left",
             borderRadius: "8px",
-            filter: "brightness(0.95) drop-shadow(0 30px 10px rgba(244, 114, 182, 0.18))",
+            filter: "brightness(0.95) drop-shadow(0 30px 10px rgba(244, 114, 182, 0.12))",
           }}
         />
 
         <div
-          className="absolute sm:mr-6 sm:mb-[120px] mb-[85px] mr-6 inset-0 z-50 bg-no-repeat"
+          className="absolute sm:mr-6 sm:mb-[70px] mb-[65px] mr-2 inset-0 z-50 bg-no-repeat"
           style={{
             backgroundImage: "url('/pic-7.png')",
-            backgroundSize: isMobile ? "120px 180px" : "230px 320px",
+            backgroundSize: isMobile ? "140px 210px" : "230px 370px",
             backgroundPosition: "bottom right",
 
             filter: "brightness(0.82) drop-shadow(0 20px 15px rgba(244, 114, 182, 0.1))", // subtle glow
@@ -142,15 +141,15 @@ export default function Destiny({ next, back }) {
           className="absolute sm:z-49  inset-0 z-19 bg-no-repeat"
           style={{
             backgroundImage: "url('/floor.png')",
-            backgroundSize: isMobile ? "180px 250px" : "290px 320px",
+            backgroundSize: isMobile ? "180px 250px" : "290px 350px",
             backgroundPosition: "bottom right",
             borderRadius: "8px",
-            filter: "brightness(0.85) drop-shadow(0 30px 10px rgba(244, 114, 182, 0.17))",
+            filter: "brightness(0.85) drop-shadow(0 30px 10px rgba(244, 114, 182, 0.10))",
           }}
         />
 
         {/* Text Box */}
-        <div className="flex-1 overflow-y-auto p-4 sm:p-6 rounded-2xl bg-white/5 backdrop-blur-sm shadow-[0_0_50px_rgba(255,105,135,0.25)] text-left text-rose-100">
+        <div className="flex-1 overflow-y-auto sm:pt-8 p-4 sm:p-6 rounded-2xl bg-white/5 backdrop-blur-sm shadow-[0_0_50px_rgba(255,105,135,0.25)] text-left text-rose-100">
           {displayedLines.map((line, i) => (
             <motion.p
               key={i}
